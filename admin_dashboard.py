@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from tkinter import *
 import sqlite3
 from tkinter import messagebox
@@ -61,3 +62,13 @@ def open_admin_dashboard(root):
 
     Button(win, text="Add Student", command=add_student, width=20).pack(pady=10)
     Button(win, text="View Students", command=view_students, width=20).pack(pady=10)
+=======
+from tkinter import *
+
+def open_admin_dashboard(main_root):
+    win = Toplevel(main_root)
+    win.title("Admin Dashboard")
+    win.geometry("400x300")
+
+    Label(win, text="Welcome Admin", font=("Arial", 16)).pack(pady=20)
+>>>>>>> 6a6cee2d7872b6b63def9724b276ce29d927e8cd

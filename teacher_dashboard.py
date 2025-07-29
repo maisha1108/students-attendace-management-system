@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from tkinter import *
 import sqlite3
 from tkinter import messagebox
@@ -63,3 +64,13 @@ def open_teacher_dashboard(root, teacher_name):
 
     Button(win, text="Mark Attendance", command=mark_attendance, width=20).pack(pady=10)
     Button(win, text="View Attendance", command=view_attendance, width=20).pack(pady=10)
+=======
+from tkinter import *
+
+def open_teacher_dashboard(main_root, teacher_name):
+    win = Toplevel(main_root)
+    win.title("Teacher Dashboard")
+    win.geometry("400x300")
+
+    Label(win, text=f"Welcome {teacher_name}", font=("Arial", 16)).pack(pady=20)
+>>>>>>> 6a6cee2d7872b6b63def9724b276ce29d927e8cd
